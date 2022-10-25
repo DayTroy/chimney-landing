@@ -17,42 +17,30 @@ html {
   font-size: 62.5%;
 }
 
-main{
-    width: 121.8rem;
-    margin: auto;
-}
-
 .container{
   width: 121.8rem;
   margin: auto;
 }
 
 .header {
+  // width: 178.5rem;
+  // height: 9.7rem;
+  margin: 2.6rem 7.2rem 0 6.3rem;
   display: flex;
   align-items: center;
-  margin: 2.6rem 7.2rem 0 6.3rem;
   &-burger__btn {
     background: url("images/burger.svg") no-repeat 50% 50%;
-    width: 5.6rem;
-    height: 5.6rem;
     border: 0.1rem solid #4c858b;
     border-radius: 50%;
     background-color: white;
     margin-left: 5.2rem;
-    @media (max-width:1614px) {
-      margin-left: 2.6rem;
-    }
-    @media (max-width:1264px) {
-      margin-left: 10rem;
-    }
+    width: 5.6rem;
+    height: 5.6rem;
   }
   &-navbar {
     display: flex;
     align-items: center;
     margin-left: 3.1rem;
-    @media (max-width:1264px) {
-      margin-left: 5rem;
-    }
     &__link {
       font-family: "Montserrat";
       font-style: normal;
@@ -61,55 +49,22 @@ main{
       line-height: 2.3rem;
       text-transform: uppercase;
       color: #4c858b;
-      margin-right: 3.5rem;
-      @media (max-width:1920px) {
-        font-size: 1.4rem;
-      }
-      @media (max-width:1855px) {
-        font-size: 1.3rem;
-      }
-      @media (max-width:1756px) {
-        font-size: 1.2rem;
-      }
-      @media (max-width:1705px) {
-        margin-right: 2rem;
-      }
-      @media (max-width:1578px) {
-        font-size: 1.1rem;
-      }
-      @media (max-width:1484px) {
-        margin-right: 1.5rem;
-      }
     }
-    &__link:nth-child(1), &__link:nth-child(2){
-      @media (max-width:1484px) {
-        min-width: 1.2rem;
-      }
-      @media (max-width:1364px) {
-        margin-left: 1rem;
-      }
-      @media (max-width:1264px) {
-        min-width: 14rem;
-      }
+    &__link:nth-child(1){
+
     } 
     &__link:nth-child(2){
-      @media (max-width:1364px) {
-        margin-left: 3rem;
-      }
-      @media (max-width:1284px) {
-        margin-left: 1rem;
-      }
+      margin-left: 3.4rem;
     }
-    &__link:nth-child(3), &__link:nth-child(4){
-      @media (max-width:1364px) {
-        margin-left: 1.5rem;
-      }
+    &__link:nth-child(3){
+      margin-left: 3.6rem;
+    }
+    &__link:nth-child(4){
+      margin-left: 3.6rem;
     }
   }
   &-phone {
-    @media (max-width:1364px) {
-      display: none;
-    }
+    margin-left: 9.5rem;
     &__text{
       font-family: "Montserrat";
       font-style: normal;
@@ -118,25 +73,6 @@ main{
       line-height: 2rem;
       letter-spacing: 0.08em;
       color: #4c858b;
-      margin-left: 6.5rem;
-      @media (max-width:1855px) {
-        font-size: 1.2rem;
-      }
-      @media (max-width:1822px) {
-        margin-left: 2rem;
-      }
-      @media (max-width:1614px) {
-        margin-left: 1rem;
-      }
-      @media (max-width:1434px) {
-        min-width: 14rem;
-      }
-      @media (max-width:1364px) {
-        margin-left: 5rem;
-      }
-      @media (max-width:1364px) {
-        margin-left: 10rem;
-      }
     }
   }
   &-call {
@@ -144,9 +80,6 @@ main{
     flex-direction: column;
     align-items: center;
     margin-left: 7rem;
-    @media (max-width:1644px) {
-      margin-left: 4rem;
-    }
     &__text {
       font-family: "Montserrat";
       font-style: normal;
@@ -156,30 +89,13 @@ main{
       text-align: center;
       text-transform: uppercase;
       color: #ae2236;
-      margin-bottom: 0.5rem;
-      max-height: 2.4rem;
-      @media (max-width:1855px) {
-        font-size: 1.2rem;
-      }
-    }
-    @media (max-width:1484px) {
-      display: none;
     }
   }
   &-social {
-    margin-left: 6.1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    @media (max-width:1546px) {
-      margin-left: 3rem;
-    }
-    @media (max-width:1484px) {
-      margin-left: 5rem;
-    }
-    @media (max-width:1264px) {
-      display: none;
-    }
+    margin-left: 6.3rem;
     &__link:nth-child(2) {
       margin-left: 1.6rem;
     }
@@ -193,32 +109,25 @@ main{
   &-button {
     display: flex;
     align-items: center;
-    margin-left: 6rem;
-    @media (max-width:1518px) {
-      margin-left: 8rem;
-    }
-    @media (max-width:1264px) {
-      margin-left: 10rem;
-    }
+    margin-left: 5.8rem;
     &__item {
-      width: 5.6rem;
-      height: 5.6rem;
       border-radius: 50%;
       border: 0.1rem solid #e5e5e5;
       background-color: #ffffff;
-
+      width: 5.6rem;
+      height: 5.6rem;
     }
     &__search {
       background: url("images/search_icon.svg") no-repeat 50% 50%;
     }
     &__like {
-      margin-left: 1.6rem;
       background: url("images/like_icon.svg") no-repeat 50% 50%;
+      margin-left: 1.6rem;
     }
     &__cart {
-      margin-left: 1.6rem;
       background: url("images/cart_icon.svg") no-repeat 50% 50%;
       position: relative;
+      margin-left: 1.6rem;
     }
   }
 }
@@ -242,20 +151,17 @@ main{
 }
 
 .intro{
-  margin-bottom: -9rem;
+  margin-top: 5.6rem;
     &__title{
-        margin-top: 5.6rem;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 6rem;
         line-height: 7.3rem;
-
         color: #000000;
     }
 
     &-block{
-        margin-top: 4.1rem;
         display: flex;
         align-items: center;
         width: 121.8rem;
@@ -263,12 +169,13 @@ main{
         border: .1rem solid #E5E5E5;
         border-left: 0;
         border-right: 0;
-        padding: 1.4rem 0 1.9rem;
+        margin-top: 4.1rem;
+        
     }
 
     &__img{
-        margin-left: .7rem;
-        margin-right: .6rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
 
     &__link{
@@ -279,32 +186,29 @@ main{
         line-height: 1.5rem;
         color: #B1B1B1;
 
-
         &-active{
             color: #4C858B;
         }
     }
+    &__link:nth-child(2){
+      margin-left: 1rem;
+    }
 
     &__descr{
         max-width: 121.8rem;
-        margin-top: 8.1rem;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 1.6rem;
         line-height: 3rem;
         color: #000000;
-        margin-bottom: 5rem;
+        margin-top: 8rem;
     }
 }
 
 .advantages{
     display: flex;
-    align-items: center;
-    margin-top: 10rem;
-    justify-content: space-between;
     &-block{
-      padding-top: 2rem;
     }
     &__title{
         min-width: 62.9rem;
@@ -314,12 +218,12 @@ main{
         font-size: 4.0rem;
         line-height: 6.3rem;
         color: #000000;
-        margin-bottom: 3.9rem;
-        
-        
+        padding-top: 4.5rem;
     }
     &-list{
       list-style: none;
+      padding-left: 2.7rem;
+      margin-top: 0rem;
         &__item{
             display: flex;
             max-width: 51.3rem;  
@@ -330,12 +234,22 @@ main{
             font-size: 1.6rem;
             line-height: 2.4rem;
             color: #000000;
-            margin-bottom: 2.5rem;
-            margin-left: 2.8rem;
+            margin-top: 3rem;
         }
         &__item:nth-child(3){
           max-width: 55rem;
+          margin-top: 2rem;
         }
+        &__item:nth-child(4){
+          margin-top: 2rem;
+        }
+        &__item:nth-child(5){
+          margin-top: 3rem;
+        }
+        &__item:nth-child(6){
+          margin-top: 2rem;
+        }
+
         &__item::before{
           content: '';
           display: inline-block;
@@ -350,7 +264,7 @@ main{
 
     }
     &__img{
-      margin-top: 0.4rem;
+      margin-top: 1.5rem;
       margin-left: -1.5rem;
     }
 }
@@ -378,6 +292,8 @@ main{
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-flow: column;
+    grid-row-gap: 1.2rem;
+    grid-column-gap: 1.8rem;
   }
   &-list-item{
     display: flex;
@@ -393,13 +309,13 @@ main{
     }
     &__text{
       max-width: 51.5rem;
-      margin-left: 4.2rem;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
       font-size: 1.6rem;
       line-height: 3rem;
       color: #000000;
+      margin-left: 4.2rem;
     }
   }
 }
@@ -440,7 +356,7 @@ main{
       align-self: baseline;
     }
     &__title{
-      margin-top: 3.2rem;
+      margin-top: 2.8rem;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 700;
@@ -549,6 +465,8 @@ main{
       font-size: 1.4rem;
       line-height: 2.2rem;
       color: #B1B1B1;
+      border: .1rem solid #E5E5E5;
+      border-radius: .4rem;
     }
     &__input:nth-child(2){
       margin-left: 1.6rem;
@@ -589,7 +507,7 @@ main{
       background: #E33E54;
     }
     &__title{
-      margin-top: 1.1rem;
+      margin-top: 1.3rem;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
@@ -610,7 +528,6 @@ main{
   &-block{
     width: 800px;
     height: 450px;
-    margin-bottom: 9.9rem;
     margin-top: 10rem;
     z-index: 5;
     &__item{
@@ -627,6 +544,7 @@ main{
 }
 
 .gallery{
+  margin-top: 9.9rem;
   &-header{
     &__line{
       width: 7.4rem;
@@ -634,7 +552,6 @@ main{
       background: #E33E54;
     }
     &__title{
-      margin-top: 1.1rem;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
@@ -658,16 +575,21 @@ main{
 }
 
 .footer{
-  margin-top: 13.6rem;
+  margin-top: 12rem;
   width: 100%;
   height: 350px;
   background: #0C2F33;
-  &-wrapper{
-    padding-top: 8.8rem;
-    display: flex;
+
+  .container {
+    display: block;
+    margin: 0 auto;
   }
-  &-block:nth-child(2){
-    margin-left: 10.5rem;
+  &-wrapper{
+    width: 118.8rem;
+    padding-top: 9rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 8rem;
   }
   &-block{
     &__title{
@@ -684,7 +606,7 @@ main{
   &-nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.9rem 10rem;
+    gap: 1.9rem 5.6rem;
     &__link{
       font-family: 'Montserrat';
       font-style: normal;
@@ -705,8 +627,10 @@ main{
       font-size: 1.4rem;
       line-height: 2.4rem;
       color: #FFFFFF;
-      margin-left: .7rem;
       min-width:28.5rem;
+      span {
+        margin-left: 10px;
+      }
     }
   }
   &-geo{
@@ -737,7 +661,8 @@ main{
     }
   }
   &-aside{
-    margin-left: 13rem;
+    margin-top: -.5rem;
+    margin-left: 3.5rem;
   }
 }
 
