@@ -4,8 +4,23 @@
   box-sizing: border-box;
 }
 
+
 a {
   text-decoration: none;
+}
+
+input{
+  outline: none;
+}
+
+button
+{
+  border: none;
+}
+
+button:focus
+{
+  border: none;
 }
 
 ul {
@@ -36,6 +51,11 @@ html {
     margin-left: 5.2rem;
     width: 5.6rem;
     height: 5.6rem;
+  }
+  &-burger__btn:hover {
+    background-color: #4c858b;
+    background-image: url("images/burger-white.svg");
+    transition: background-image 1s, background-color 1s, transform 1s;
   }
   &-navbar {
     display: flex;
@@ -208,8 +228,6 @@ html {
 
 .advantages{
     display: flex;
-    &-block{
-    }
     &__title{
         min-width: 62.9rem;
         font-family: 'Montserrat';
@@ -419,13 +437,13 @@ html {
       align-items: center;
       justify-content: center;
       margin-top: 3.1rem;
-      &__item:nth-child(2){
+      &__link:nth-child(2){
         margin-left: 3.6rem;
       }
-      &__item:nth-child(3){
+      &__link:nth-child(3){
         margin-left: 4.2rem;
       }
-      &__item:nth-child(4){
+      &__link:nth-child(4){
         margin-left: 4.4rem;
       }
     }
@@ -464,9 +482,16 @@ html {
       font-weight: 500;
       font-size: 1.4rem;
       line-height: 2.2rem;
-      color: #B1B1B1;
+      color: #000000;
       border: .1rem solid #E5E5E5;
       border-radius: .4rem;
+      transition: border-color .5s linear;
+    }
+    &__input:hover{
+      border: .1rem #215359 solid;
+    }
+    &__input::placeholder{
+      color: #B1B1B1;
     }
     &__input:nth-child(2){
       margin-left: 1.6rem;
@@ -653,10 +678,10 @@ html {
     margin-top: 2.5rem;
     display: flex;
     align-items: center;
-    &__icon{
+    &__link{
       margin-left: 3.6rem;
     }
-    &__icon:nth-child(1){
+    &__link:nth-child(1){
       margin-left: 0;
     }
   }

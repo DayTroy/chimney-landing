@@ -8,6 +8,18 @@ a {
   text-decoration: none;
 }
 
+input {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  border: none;
+}
+
 ul {
   list-style-type: none;
   list-style: none; /* Remove default bullets */
@@ -35,6 +47,11 @@ html {
   margin-left: 5.2rem;
   width: 5.6rem;
   height: 5.6rem;
+}
+.header-burger__btn:hover {
+  background-color: #4c858b;
+  background-image: url("images/burger-white.svg");
+  transition: background-image 1s, background-color 1s, transform 1s;
 }
 .header-navbar {
   display: flex;
@@ -403,13 +420,13 @@ html {
   justify-content: center;
   margin-top: 3.1rem;
 }
-.consultation-header-social__item:nth-child(2) {
+.consultation-header-social__link:nth-child(2) {
   margin-left: 3.6rem;
 }
-.consultation-header-social__item:nth-child(3) {
+.consultation-header-social__link:nth-child(3) {
   margin-left: 4.2rem;
 }
-.consultation-header-social__item:nth-child(4) {
+.consultation-header-social__link:nth-child(4) {
   margin-left: 4.4rem;
 }
 .consultation-form {
@@ -447,9 +464,22 @@ html {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 2.2rem;
-  color: #B1B1B1;
+  color: #000000;
   border: 0.1rem solid #E5E5E5;
   border-radius: 0.4rem;
+  transition: border-color 0.5s linear;
+}
+.consultation-form__input:hover {
+  border: 0.1rem #215359 solid;
+}
+.consultation-form__input::-moz-placeholder {
+  color: #B1B1B1;
+}
+.consultation-form__input:-ms-input-placeholder {
+  color: #B1B1B1;
+}
+.consultation-form__input::placeholder {
+  color: #B1B1B1;
 }
 .consultation-form__input:nth-child(2) {
   margin-left: 1.6rem;
@@ -629,10 +659,10 @@ html {
   display: flex;
   align-items: center;
 }
-.footer-social__icon {
+.footer-social__link {
   margin-left: 3.6rem;
 }
-.footer-social__icon:nth-child(1) {
+.footer-social__link:nth-child(1) {
   margin-left: 0;
 }
 .footer-aside {
